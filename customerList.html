@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        display: flex;
+        /* border: 1px solid red; */
+    }
+   #add{
+    margin-right: 500px;
+    align-self: center;
+    height: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(0, 145, 255);
+    border: 0;
+   }
+   #add:hover{
+    cursor: pointer;
+    background-color:rgb(97, 180, 247);
+   }
+    
+    hr{
+        width: 94%;
+        border: 1px solid black;
+    }
+    #cont{
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+       display: grid;
+       row-gap: 5px;
+        font-family: Apple Chancery, cursive;
+    }
+    #cont>div{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        /* border: 1px solid blue;    */
+    }
+    #line{
+        font-weight: bold;
+        border-bottom: 2px solid rgb(202, 192, 192);
+        padding-bottom: 15px;
+    }
+</style>
+<body>
+    <div id="heading"> 
+        <button id="add" onclick="add()">Add Customer</button>
+        <h1>Customer List</h1>
+    </div>
+    <hr>
+    <div id="cont">
+       <div id="line">
+        <div>First Name</div>
+        <div>Last Name</div>
+        <div>Address</div>
+        <div>City</div>
+        <div>State</div>
+        <div>Email</div>
+        <div>phone </div>
+        <div>action</div>
+       </div>
+       <div >
+        <div>First Name</div>
+        <div>Last Name</div>
+        <div>Address</div>
+        <div>City</div>
+        <div>State</div>
+        <div>Email</div>
+        <div>phone </div>
+        <div>action</div>
+       </div>
+       <div >
+        <div>First Name</div>
+        <div>Last Name</div>
+        <div>Address</div>
+        <div>City</div>
+        <div>State</div>
+        <div>Email</div>
+        <div>phone </div>
+        <div>action</div>
+       </div>
+    </div>
+</body>
+
+
+<script>
+function add()
+{
+    window.location.href="addCustomer.html";
+}
+
+
+
+
+
+</script>
+</html>

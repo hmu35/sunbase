@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        *{
+            font-family: Apple Chancery, cursive;     
+           }
+        div{
+
+            margin: auto;
+            width: 45%;
+            margin-top: 100px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 30px 50px 50px 50px;
+        }
+       input{
+        border: 1px solid rgb(165, 160, 160);
+        height: 40px;
+        width: 300px;
+        margin-right: 20px;
+        border-radius: 5px;
+        padding-left: 10px;
+       }
+       #button{
+    background-color: rgb(0, 145, 255);
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    margin-left: 350px;
+}
+#button:hover{
+    cursor: pointer;
+    background-color:rgb(97, 180, 247);
+}
+#back{
+    background-color: rgb(0, 145, 255);
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    margin-top: 60px;
+    border-radius: 5px;
+    margin-left: 80%;
+}
+#back:hover{
+    cursor: pointer;
+    background-color:rgb(97, 180, 247);
+}
+    </Style>
+</head>
+<body>
+    <div>
+        <h2>Add Customer Details</h2>
+     <form action="login.php" method="post">
+
+        <input type="text" placeholder="First Name" id="fname" name="fname" required>
+
+        <input type="text" placeholder="Last Name" id="lname" name="lname" required><br><br>
+
+        <input type="text" placeholder="Street" id="street" name="street" required>
+
+        <input type="text" placeholder="Address" id="address" name="address" required><br><br>
+
+        <input type="text" placeholder="City" id="city" name="city" required>
+
+        <input type="text" placeholder="State" id="state" name="state" required><br><br>
+
+        <input type="email" placeholder="Email" id="email" name="email" required>
+
+        <input type="tel" placeholder="Phone" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="Submit" id="button">
+    </form> 
+    </div>
+
+    <button id="back" onclick="back()">
+     Back to Customer List
+    </button>
+</body>
+
+<Script>
+function back()
+{
+    window.location.href="customerList.html";
+}
+</Script>
+</html>
